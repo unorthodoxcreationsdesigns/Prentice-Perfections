@@ -342,12 +342,38 @@
     <!-- Footer -->
         <!-- Tickets Section -->
         <section id="tickets" style="padding: 2em 0; background: #f9f9f9;">
-          <div class="container">
-            <h2>Buy Tickets</h2>
-            <p>Purchase tickets for upcoming events and shows directly from our site.</p>
-            <!-- Eventbrite Widget Placeholder -->
-            <div id="eventbrite-widget-container"></div>
-          </div>
+            <div class="container">
+                <h2>Buy Tickets</h2>
+                <p>Purchase tickets for upcoming events and shows directly from your preferred platform.</p>
+                <div style="display: flex; gap: 2em; flex-wrap: wrap; margin-bottom: 2em;">
+                    <!-- Eventbrite Widget -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Eventbrite</h3>
+                        <div id="eventbrite-widget-container"></div>
+                        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+                        <script type="text/javascript">
+                            var exampleEventId = "1234567890"; // Replace with your actual Eventbrite event ID
+                            window.EBWidgets.createWidget({
+                                widgetType: "checkout",
+                                eventId: exampleEventId,
+                                modal: true,
+                                modalTriggerElementId: "eventbrite-widget-container",
+                                onOrderComplete: function() {
+                                    // Callback after successful order
+                                }
+                            });
+                        </script>
+                        <p style="font-size:0.9em;color:#888;">Tickets powered by Eventbrite.</p>
+                    </div>
+                    <!-- Ticketmaster Button -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Ticketmaster</h3>
+                        <a href="https://www.ticketmaster.com/event/000000000000" target="_blank" style="display:inline-block;padding:0.75em 1.5em;background:#0072ce;color:#fff;border-radius:4px;text-decoration:none;font-weight:bold;">Buy on Ticketmaster</a>
+                        <p style="font-size:0.9em;color:#888;">You will be redirected to Ticketmaster to complete your purchase.</p>
+                    </div>
+                </div>
+                <p style="font-size:0.9em;color:#888;">Your event will be syndicated to Ticketmaster, Eventbrite, and other partners when using Eventbrite's distribution features.</p>
+            </div>
         </section>
     <footer class="footer">
         <div class="container">
