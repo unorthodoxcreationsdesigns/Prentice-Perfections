@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280">
+  <!-- Outer box -->
+  <rect x="20" y="20" width="100" height="100" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- First circle -->
+  <circle cx="70" cy="50" r="20" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Second circle -->
+  <circle cx="70" cy="90" r="20" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Curved shape (right side) -->
+  <path d="M 120 20 Q 160 20 160 70 Q 160 120 120 120" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Diagonal line -->
+  <line x1="40" y1="110" x2="80" y2="140" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Bottom curved section -->
+  <path d="M 100 150 Q 140 150 160 180 Q 170 200 150 220 Q 120 240 80 230" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Text: Official Freebacking -->
+  <text x="70" y="255" font-family="cursive, italic" font-size="16" fill="black" text-anchor="middle" font-style="italic">Official Freebacking</text>
+  
+  <!-- Text: APPAREL -->
+  <text x="70" y="275" font-family="Arial, sans-serif" font-size="11" fill="black" text-anchor="middle" letter-spacing="3">APPAREL</text>
+</svg>
