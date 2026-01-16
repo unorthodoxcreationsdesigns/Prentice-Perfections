@@ -3,100 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prentice Perfections - Columbus, GA</title>
+    <title>Prentice Perfections | Elite Talent & Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <span class="logo-icon">✨</span>
-                <h1>Prentice Perfections</h1>
+        <!-- Elegant Navigation Bar -->
+        <nav class="navbar elegant-navbar">
+            <div class="container nav-flex">
+                <div class="logo elegant-logo">
+                    <span class="logo-icon">&#10024;</span>
+                    <span class="logo-text">Prentice Perfections</span>
+                </div>
+                <ul class="nav-links elegant-nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#talent" class="nav-link">Talent</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#success" class="nav-link">Stories</a></li>
+                    <li><a href="#tickets" class="nav-link">Tickets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">☰</button>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#talent" class="nav-link">Talent</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#success" class="nav-link">Success Stories</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="menu-toggle">☰</button>
-        </div>
-    </nav>
+        </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Elegance in Every Endeavor</h2>
-            <p class="hero-subtitle">Prentice Perfections</p>
-            <p class="hero-description">Columbus, GA's Premier Entertainment Management Company</p>
-            <button class="cta-button" onclick="scrollToSection('talent')">Explore Our Talent</button>
-        </div>
-        <div class="hero-background">
-            <div class="floating-card card-1">🎵</div>
-            <div class="floating-card card-2">🎬</div>
-            <div class="floating-card card-3">📸</div>
-            <div class="floating-card card-4">⚽</div>
-        </div>
+    <section id="home" class="hero minimal-hero">
+      <div class="minimal-hero-bg"></div>
+      <div class="minimal-hero-content">
+        <h1 class="hero-title minimal-hero-title">Elegance in Every Endeavor</h1>
+        <p class="hero-subtitle minimal-hero-subtitle">Prentice Perfections</p>
+        <p class="hero-description minimal-hero-desc">Elite Entertainment Management & Event Experiences</p>
+        <button class="cta-button minimal-cta" onclick="scrollToSection('talent')">Explore Our Talent</button>
+      </div>
     </section>
 
     <!-- Talent Categories Section -->
-    <section id="talent" class="talent">
-        <div class="container">
-            <h2 class="section-title">Our Talent</h2>
-            <p class="section-subtitle">Browse our exceptional roster of artists, actors, models, and athletes</p>
-            
-            <div class="talent-categories">
+    <section id="talent" class="talent minimal-section">
+      <div class="container minimal-section-card">
+            <h2 class="section-title minimal-section-title">Our Talent</h2>
+            <p class="section-subtitle minimal-section-subtitle">Browse our exceptional roster of artists, actors, models, and athletes</p>
+            <div class="talent-categories minimal-categories">
                 <!-- Music Artists -->
-                <div class="category-tab" onclick="showCategory('music')">
+                <div class="category-tab minimal-category-tab" onclick="showCategory('music')">
                     <div class="category-icon">🎵</div>
                     <h3>Music</h3>
                 </div>
                 <!-- Actors/Actresses -->
-                <div class="category-tab" onclick="showCategory('film')">
+                <div class="category-tab minimal-category-tab" onclick="showCategory('film')">
                     <div class="category-icon">🎬</div>
                     <h3>Film & TV</h3>
                 </div>
                 <!-- Models -->
-                <div class="category-tab" onclick="showCategory('models')">
+                <div class="category-tab minimal-category-tab" onclick="showCategory('models')">
                     <div class="category-icon">📸</div>
                     <h3>Models</h3>
                 </div>
                 <!-- Athletes -->
-                <div class="category-tab" onclick="showCategory('sports')">
+                <div class="category-tab minimal-category-tab" onclick="showCategory('sports')">
                     <div class="category-icon">⚽</div>
                     <h3>Sports</h3>
                 </div>
             </div>
 
             <!-- Talent Grid -->
-            <div class="talent-grid">
+            <div class="talent-grid minimal-talent-grid">
                 <!-- Music Artists -->
                 <div class="talent-category" id="music">
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image"><img src="baby-duke.png" alt="Baby Duke" style="width: 100%; height: 100%; object-fit: cover; object-position: center 8%;"></div>
+                        <div class="talent-image card-hover"><img src="baby-duke.png" alt="Baby Duke" style="width: 100%; height: 100%; object-fit: cover; object-position: center 8%;"></div>
                         <h3>Baby Duke</h3>
                         <p class="specialty">Hip-Hop Artist</p>
                         <p class="bio">Rising star from Columbus, performing on major platforms and building his legacy</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image"><img src="trey-merritt.png" alt="Trey Merritt ft. Hi Def" style="width: 100%; height: 100%; object-fit: cover; object-position: center 0%;"></div>
+                        <div class="talent-image card-hover"><img src="trey-merritt.png" alt="Trey Merritt ft. Hi Def" style="width: 100%; height: 100%; object-fit: cover; object-position: center 0%;"></div>
                         <h3>Trey Merritt ft. Hi Def</h3>
                         <p class="specialty">Artist</p>
                         <p class="bio">Award-winning group performing across the Southeast</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image"><img src="lexx.heic.jpeg" alt="Lexx" style="width: 100%; height: 100%; object-fit: cover; object-position: center 5%;"></div>
+                        <div class="talent-image card-hover"><img src="lexx.heic.jpeg" alt="Lexx" style="width: 100%; height: 100%; object-fit: cover; object-position: center 5%;"></div>
                         <h3>Lexx</h3>
                         <p class="specialty">Vocalist</p>
                         <p class="bio">Breaking through barriers as an independent artist</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image"><img src="dj-oo7.png" alt="DJ OO7" style="width: 100%; height: 100%; object-fit: cover; object-position: center 6%;"></div>
+                        <div class="talent-image card-hover"><img src="dj-oo7.png" alt="DJ OO7" style="width: 100%; height: 100%; object-fit: cover; object-position: center 6%;"></div>
                         <h3>DJ OO7</h3>
                         <p class="specialty">Open Format DJ</p>
                         <p class="bio">Festival favorites and club circuit regulars</p>
@@ -107,28 +105,28 @@
                 <!-- Film & TV Actors -->
                 <div class="talent-category" id="film" style="display: none;">
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">🎭</div>
+                        <div class="talent-image card-hover">🎭</div>
                         <h3>James Mitchell</h3>
                         <p class="specialty">Lead Actor</p>
                         <p class="bio">Starred in major network TV shows and independent films</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">👩‍🦱</div>
+                        <div class="talent-image card-hover">👩‍🦱</div>
                         <h3>Victoria Chen</h3>
                         <p class="specialty">Actress</p>
                         <p class="bio">Versatile performer in drama and comedy productions</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">🎬</div>
+                        <div class="talent-image card-hover">🎬</div>
                         <h3>David Brooks</h3>
                         <p class="specialty">Character Actor</p>
                         <p class="bio">Known for memorable supporting roles in streaming series</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">✨</div>
+                        <div class="talent-image card-hover">✨</div>
                         <h3>Sophia Rodriguez</h3>
                         <p class="specialty">Actress</p>
                         <p class="bio">Emerging talent with powerful screen presence</p>
@@ -139,28 +137,28 @@
                 <!-- Models -->
                 <div class="talent-category" id="models" style="display: none;">
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">👠</div>
+                        <div class="talent-image card-hover">👠</div>
                         <h3>Alexandra Torres</h3>
                         <p class="specialty">Fashion Model</p>
                         <p class="bio">High fashion runway and editorial magazine features</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">💃</div>
+                        <div class="talent-image card-hover">💃</div>
                         <h3>Marcus Johnson</h3>
                         <p class="specialty">Male Model</p>
                         <p class="bio">Commercial and lifestyle photography specialist</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">🌟</div>
+                        <div class="talent-image card-hover">🌟</div>
                         <h3>Emily Parks</h3>
                         <p class="specialty">Influencer Model</p>
                         <p class="bio">Social media sensation with brand partnership experience</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">✨</div>
+                        <div class="talent-image card-hover">✨</div>
                         <h3>André Silva</h3>
                         <p class="specialty">Runway Model</p>
                         <p class="bio">International runway experience and brand ambassador</p>
@@ -171,28 +169,28 @@
                 <!-- Athletes -->
                 <div class="talent-category" id="sports" style="display: none;">
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">🏀</div>
+                        <div class="talent-image card-hover">🏀</div>
                         <h3>Tyler Anderson</h3>
                         <p class="specialty">Basketball Player</p>
                         <p class="bio">Professional athlete with endorsement deals and athletic partnerships</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">⚽</div>
+                        <div class="talent-image card-hover">⚽</div>
                         <h3>Carlos Mendez</h3>
                         <p class="specialty">Soccer Player</p>
                         <p class="bio">Professional soccer player with international experience</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">🏐</div>
+                        <div class="talent-image card-hover">🏐</div>
                         <h3>Jasmine Lee</h3>
                         <p class="specialty">Volleyball Champion</p>
                         <p class="bio">National champion athlete and sports commentator</p>
                         <button class="inquiry-btn">Learn More</button>
                     </div>
                     <div class="talent-card" onclick="openTalentModal(this)">
-                        <div class="talent-image">🏊</div>
+                        <div class="talent-image card-hover">🏊</div>
                         <h3>Derek Thompson</h3>
                         <p class="specialty">Fitness Influencer</p>
                         <p class="bio">Professional trainer and health brand ambassador</p>
@@ -205,36 +203,36 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="container">
+      <div class="container section-card">
             <h2 class="section-title">Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">📋</div>
+                    <div class="service-icon card-hover">📋</div>
                     <h3>Talent Representation</h3>
                     <p>Professional representation and career management for all entertainment sectors</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🤝</div>
+                    <div class="service-icon card-hover">🤝</div>
                     <h3>Booking & Bookings</h3>
                     <p>Connecting talent with premium opportunities and brand partnerships</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">📱</div>
+                    <div class="service-icon card-hover">📱</div>
                     <h3>Social Media Management</h3>
                     <p>Strategic social media growth and audience engagement services</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎬</div>
+                    <div class="service-icon card-hover">🎬</div>
                     <h3>Content Creation</h3>
                     <p>Professional production services and content strategy development</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💼</div>
+                    <div class="service-icon card-hover">💼</div>
                     <h3>Brand Partnerships</h3>
                     <p>Facilitating lucrative endorsement and sponsorship opportunities</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🌐</div>
+                    <div class="service-icon card-hover">🌐</div>
                     <h3>Career Development</h3>
                     <p>Comprehensive support for talent growth and career advancement</p>
                 </div>
@@ -244,7 +242,7 @@
 
     <!-- Success Stories Section -->
     <section id="success" class="success-stories">
-        <div class="container">
+      <div class="container section-card">
             <h2 class="section-title">Success Stories</h2>
             <div class="stories-grid">
                 <div class="story-card">
@@ -279,9 +277,40 @@
         </div>
     </section>
 
+    <!-- Tickets Section -->
+    <section id="tickets" class="tickets">
+      <div class="container elegant-tickets-container section-card">
+            <h2 class="section-title elegant-tickets-title">Tickets & Events</h2>
+            <div class="tickets-card-row">
+                <div class="tickets-card">
+                    <h3>Eventbrite</h3>
+                    <div id="eventbrite-widget-container"></div>
+                    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+                    <script type="text/javascript">
+                        var exampleEventId = "1234567890"; // Replace with your actual Eventbrite event ID
+                        window.EBWidgets.createWidget({
+                            widgetType: "checkout",
+                            eventId: exampleEventId,
+                            modal: true,
+                            modalTriggerElementId: "eventbrite-widget-container",
+                            onOrderComplete: function() {}
+                        });
+                    </script>
+                    <p class="tickets-card-desc">Tickets powered by Eventbrite.</p>
+                </div>
+                <div class="tickets-card">
+                    <h3>Ticketmaster</h3>
+                    <a href="https://www.ticketmaster.com/event/000000000000" target="_blank" class="cta-button elegant-cta">Buy on Ticketmaster</a>
+                    <p class="tickets-card-desc">You will be redirected to Ticketmaster to complete your purchase.</p>
+                </div>
+            </div>
+            <p class="tickets-syndication-note">Your event will be syndicated to Ticketmaster, Eventbrite, and other partners when using Eventbrite's distribution features.</p>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
+      <div class="container section-card">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-wrapper">
                 <div class="contact-info">
@@ -340,46 +369,11 @@
     </div>
 
     <!-- Footer -->
-        <!-- Tickets Section -->
-        <section id="tickets" style="padding: 2em 0; background: #f9f9f9;">
-            <div class="container">
-                <h2>Buy Tickets</h2>
-                <p>Purchase tickets for upcoming events and shows directly from your preferred platform.</p>
-                <div style="display: flex; gap: 2em; flex-wrap: wrap; margin-bottom: 2em;">
-                    <!-- Eventbrite Widget -->
-                    <div style="flex: 1; min-width: 300px;">
-                        <h3>Eventbrite</h3>
-                        <div id="eventbrite-widget-container"></div>
-                        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-                        <script type="text/javascript">
-                            var exampleEventId = "1234567890"; // Replace with your actual Eventbrite event ID
-                            window.EBWidgets.createWidget({
-                                widgetType: "checkout",
-                                eventId: exampleEventId,
-                                modal: true,
-                                modalTriggerElementId: "eventbrite-widget-container",
-                                onOrderComplete: function() {
-                                    // Callback after successful order
-                                }
-                            });
-                        </script>
-                        <p style="font-size:0.9em;color:#888;">Tickets powered by Eventbrite.</p>
-                    </div>
-                    <!-- Ticketmaster Button -->
-                    <div style="flex: 1; min-width: 300px;">
-                        <h3>Ticketmaster</h3>
-                        <a href="https://www.ticketmaster.com/event/000000000000" target="_blank" style="display:inline-block;padding:0.75em 1.5em;background:#0072ce;color:#fff;border-radius:4px;text-decoration:none;font-weight:bold;">Buy on Ticketmaster</a>
-                        <p style="font-size:0.9em;color:#888;">You will be redirected to Ticketmaster to complete your purchase.</p>
-                    </div>
-                </div>
-                <p style="font-size:0.9em;color:#888;">Your event will be syndicated to Ticketmaster, Eventbrite, and other partners when using Eventbrite's distribution features.</p>
+        <footer class="footer">
+            <div class="container elegant-footer-container">
+                <p class="footer-brand">&copy; 2026 Prentice Perfections</p>
+                <p class="footer-desc">Elite Talent & Event Management | Columbus, Georgia</p>
             </div>
-        </section>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Prentice Perfections. All rights reserved. | Columbus, Georgia</p>
-            <p>Representing the finest entertainment talent in the Southeast</p>
-        </div>
     </footer>
 
     <script src="script.js"></script>
